@@ -28,7 +28,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "host",
+      name: "webApp",
       remotes: {
         app2: "remote@http://localhost:3002/counter.js",
         store: "store@http://localhost:3003/remote-store.js",
