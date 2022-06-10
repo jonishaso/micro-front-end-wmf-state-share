@@ -1,7 +1,10 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
-const deps = require("./package.json").dependencies;
+const pkg = require("./package.json");
+
+const deps = pkg.dependencies;
+const hostString = "http://localhost:3003";
 
 module.exports = {
   entry: "./src/index",
@@ -11,7 +14,7 @@ module.exports = {
     port: 3003,
   },
   output: {
-    publicPath: "auto",
+    publicPath: `${hostString}/${String(pkg.version).replaceAll(".", "-")}/`,
   },
   module: {
     rules: [
