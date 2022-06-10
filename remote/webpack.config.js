@@ -30,7 +30,7 @@ module.exports = {
       name: "remote",
       filename: "counter.js",
       remotes: {
-        store: "store@http://localhost:3003/remote-store.js",
+        store: "store@http://localhost:3003/1-0-0/remote-store.js",
       },
       exposes: {
         "./counter": "./src/counter",

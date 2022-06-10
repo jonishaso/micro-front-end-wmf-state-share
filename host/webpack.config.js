@@ -31,7 +31,7 @@ module.exports = {
       name: "webApp",
       remotes: {
         app2: "remote@http://localhost:3002/counter.js",
-        store: "store@http://localhost:3003/remote-store.js",
+        store: "store@http://localhost:3003/1-0-0/remote-store.js",
       },
       shared: {
         react: {
