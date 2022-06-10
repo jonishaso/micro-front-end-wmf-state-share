@@ -28,6 +28,10 @@ module.exports = {
       },
     ],
   },
+  externals: {
+    react: "React",
+    "react-dom": "ReactDOM",
+  },
   plugins: [
     new ModuleFederationPlugin({
       name: "store",
