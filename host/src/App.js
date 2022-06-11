@@ -2,7 +2,7 @@ import React from "react";
 import RemoteApp from "app2/counter";
 import { useCounterStore } from "store/storeHooks";
 
-const App = () => {
+export default () => {
   const { count } = useCounterStore();
 
   return (
@@ -14,5 +14,3 @@ const App = () => {
     </div>
   );
 };
-
-export default App;
