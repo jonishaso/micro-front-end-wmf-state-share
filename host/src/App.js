@@ -8,6 +8,8 @@ export default () => {
   return (
     <div className="App">
       <RemoteApp />
+      <RemoteApp />
+
       <h1
         style={{ color: "red", backgroundColor: "blue" }}
       >{`Host App ${count}`}</h1>
