@@ -45,13 +45,9 @@ module.exports = {
       },
       shared: {
         ...deps,
-        react: {
+        "react-redux": {
           singleton: true,
-          requiredVersion: deps.react,
-        },
-        "react-dom": {
-          singleton: true,
-          requiredVersion: deps["react-dom"],
+          requiredVersion: deps["react-redux"],
         },
       },
     }),

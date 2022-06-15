@@ -32,19 +32,16 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
+      runtime: "web application",
       name: "webApp",
       remotes: {
-        app2: "remote@http://localhost:3002/counter.js",
+        app2: "remote@http://localhost:3002/main-0.js",
         store: "store@http://localhost:3003/1-0-0/remote-store.js",
       },
       shared: {
-        react: {
+        "react-redux": {
           singleton: true,
-          requiredVersion: deps.react,
-        },
-        "react-dom": {
-          singleton: true,
-          requiredVersion: deps["react-dom"],
+          requiredVersion: deps["react-redux"],
         },
       },
     }),

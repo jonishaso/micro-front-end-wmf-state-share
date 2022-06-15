@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: "remote",
-      filename: "counter.js",
+      filename: "main-0.js",
       remotes: {
         store: "store@http://localhost:3003/1-0-0/remote-store.js",
       },
