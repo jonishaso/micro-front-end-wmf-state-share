@@ -35,7 +35,7 @@ module.exports = {
       runtime: "web application",
       name: "webApp",
       remotes: {
-        app2: "remote@http://localhost:3002/main-0.js",
+        app2: "remote@http://localhost:3002/remote-main.js",
         store: "store@http://localhost:3003/1-0-0/remote-store.js",
       },
       shared: {
